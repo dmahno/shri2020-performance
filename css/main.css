@@ -1,23 +1,21 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 @font-face {
   font-family: OpenSansReg;
   font-style: normal;
   font-weight: 700;
   src: local('OpenSans Regular'), local('OpenSans-Regular'),
-    url(assets/OpenSans-Regular.woff2) format('woff2');
-  font-display: swap;
+    url(../assets/OpenSans-Regular.woff2) format('woff2');
 }
 @font-face {
   font-family: OpenSansLight;
   font-style: normal;
   font-weight: 400;
   src: local('OpenSans Light'), local('OpenSans-Light'),
-    url(assets/OpenSans-Light.woff2) format('woff2');
-  font-display: swap;
-}
-*,
-::after,
-::before {
-  box-sizing: border-box;
+    url(../assets/OpenSans-Light.woff2) format('woff2');
 }
 html {
   font-family: sans-serif;
@@ -347,7 +345,7 @@ html {
   left: -24px;
   width: 20px;
   height: 20px;
-  background: url(img/checked.svg);
+  background: url(../img/checked.svg);
 }
 .content-block {
   width: 100%;
@@ -532,7 +530,7 @@ footer {
   width: 100%;
   margin-top: 40px;
   display: block;
-  background: url(img/cam2_q50.jpg);
+  background: url(../img/cam2.jpg);
   border-radius: 20px;
   background-size: cover;
   background-position: 0 0;

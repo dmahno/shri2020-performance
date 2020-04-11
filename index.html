@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <img class="header-logo" src="img/yd2.png" alt="Yandex" loading="lazy" />
+      <img class="header-logo" src="img/yd2.svg" alt="Yandex" />
       <div class="header-menu">
         <a class="header-menu__link" href="cam.html">Видеонаблюдение</a>
         <a class="header-menu__link header-menu__link_active" href="index.html"
@@ -64,8 +64,8 @@
             <div class="card-data card-data_graph">
               <img
                 class="card-data_graph-img"
-                src="img/graph.png"
-                alt="График"
+                src="img/mountains.svg"
+                alt="График-поле"
                 loading="lazy"
               />
             </div>
@@ -171,7 +171,7 @@
             <div class="card-data card-data_music">
               <div class="song-area">
                 <div class="cover-wrap">
-                  <img class="cover" src="img/avatar.jpg" alt="Обложка" />
+                  <img class="cover" src="img/avatar.jpg" alt="Альбом" />
                 </div>
                 <div class="song-data">
                   <h4 class="song-title">
@@ -293,14 +293,7 @@
               Робопылесос не смог сменить свое местоположение в течение
               последних 3 минут. Похоже, ему нужна помощь.
             </p>
-            <div
-              class="critical-cam"
-              style="
-                background-position: 0px 0px;
-                background-size: 100%;
-                filter: brightness(100%);
-              "
-            ></div>
+            <div class="critical-cam"></div>
           </div>
           <div class="card card_size_s" style="border-radius: 22px;">
             <div class="card-heading">
@@ -329,18 +322,6 @@
         >
       </div>
     </footer>
-    <script>
-      let btns = document.querySelector('#btns');
-      (btns.querySelector('.button_yellow').onclick = () => {
-        (document.querySelector('#purchase').style.display = 'block'),
-          (document.querySelector('#desc').style.display = 'none'),
-          (btns.style.display = 'none');
-      }),
-        (document.querySelector('.header-menu__switcher').onclick = () => {
-          document
-            .querySelector('.header-menu')
-            .classList.toggle('header-menu_active');
-        });
-    </script>
+    <script async src="js/main.js"></script>
   </body>
 </html>
